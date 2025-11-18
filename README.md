@@ -105,7 +105,7 @@ Home page reads Redux state using useSelector and displays:
 ## 📸 Screenshots
 
 ### Signup Form (Main UI)
-![Signup Form](./screenshots/signup-main.png)
+![Signup Form](./screenshots/signup-ui.png)
 
 ### Validation Errors
 ![Validation](./screenshots/signup-errors.png)
