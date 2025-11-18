@@ -1,66 +1,52 @@
-Signup Form with Redux (React + Vite)
+# Signup Form with Redux (React + Vite)
 
-A clean, modern Signup form built using React, Redux Toolkit, and Vite.
-This project demonstrates:
+A clean and modern signup form built using **React**, **Redux Toolkit**, and **Vite**.  
+This project demonstrates component-based architecture, global state management, and simple routing, wrapped in a polished UI.
 
-Component-based UI architecture
+---
 
-Redux Toolkit usage for state management
+## 🚀 Features
 
-Navigation using React Router
+### ✔ Signup Form
+- Name, Email, Password fields  
+- Inline validation  
+- Error messages  
+- Modern UI with rounded card layout and soft color palette  
 
-Form validation
+### ✔ Redux Toolkit Integration
+- `signupStart`, `signupSuccess`, `signupFailure` actions  
+- Global state for user data and loading state  
+- Simulated async signup using `setTimeout`  
+- Clean slice + store setup  
 
-Clean, scalable folder structure
+### ✔ Routing
+- `/` → Signup Page  
+- `/home` → Welcome Page  
 
-🚀 Features
-✔ Signup Form
+---
 
-Name, Email, Password fields
+## 📁 Folder Structure
 
-Inline form validation
-
-Error messages
-
-Modern UI with soft palette & rounded card
-
-✔ Redux Toolkit Integration
-
-signupStart, signupSuccess, signupFailure actions
-
-Stores user data globally
-
-Simulated async signup using setTimeout
-
-Proper Redux slices & store configuration
-
-✔ Routing
-
-/ → Signup Page
-
-/home → Welcome Page 
-
-✔ File Structure
-```
+ ```
 src/
 │
 ├── app/
-│   └── store.js
+│ └── store.js
 │
 ├── features/
-│   └── auth/
-│       └── authSlice.js
+│ └── auth/
+│ └── authSlice.js
 │
 ├── components/
-│   └── Signup/
-│       ├── Signup.jsx
-│       ├── Signup.css
-│       └── index.js
+│ └── Signup/
+│ ├── Signup.jsx
+│ ├── Signup.css
+│ └── index.js
 │
 ├── pages/
-│   └── Home/
-│       ├── Home.jsx
-│       └── Home.css
+│ └── Home/
+│ ├── Home.jsx
+│ └── Home.css
 │
 ├── utils/
 │
@@ -69,78 +55,67 @@ src/
 ├── App.jsx
 ├── main.jsx
 └── index.css
-```
-
-🛠️ Tech Stack
-
-React (Vite)
-
-Redux Toolkit
-
-React Router DOM
-
-CSS Modules (plain CSS)
-
-JavaScript (ES6+)
-
-📦 Installation & Setup
-1️⃣ Clone the repository
 
 ```
+
+## 🛠 Tech Stack
+
+- **React (Vite)**
+- **Redux Toolkit**
+- **React Router DOM**
+- **Plain CSS**
+- **JavaScript (ES6+)**
+
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/Harshita2020/signup-redux-assignment.git
 ```
 
 2️⃣ Install dependencies
-```
+```bash
 npm install
 ```
 
 3️⃣ Run the development server
-```
+```bash
 npm run dev
 ```
 
-🧪 How it Works
-➤ When user fills the form & clicks Sign Up:
+🧪 How It Works
 
-Validation runs
+User fills the form → clicks Sign Up
+
+Basic validation runs
 
 Redux dispatches signupStart()
 
-A fake API delay (800ms) simulates network call
+A simulated network delay (800ms) runs
 
-If successful → signupSuccess(userData)
+On success → signupSuccess(userData)
 
-User is redirected to /home using useNavigate
+User navigates to /home
 
-Home page reads Redux user state via useSelector
-
-Displays:
+Home page reads Redux state using useSelector and displays:
 “Welcome, {name}! 🎉”
 
-📁 Folder Structure Explained
-components/
+## 📸 Screenshots
 
-Reusable UI components (Signup form)
+### Signup Form (Main UI)
+![Signup Form](./screenshots/signup-main.png)
 
-features/auth/
+### Validation Errors
+![Validation](./screenshots/signup-errors.png)
 
-Contains authSlice.js — manages signup state (loading, user, error)
+### Success Page
+![Success](./screenshots/signup-success.png)
 
-pages/
-
-Route-based components (Signup, Home)
-
-app/store.js
-
-Redux store configuration
-
-🖼️ Screenshots
-
-(Add screenshots here if you want to make the repo look more polished.)
 
 🧑‍💻 Author
 
-Created by Harshita — as part of an interview assignment requiring a Signup Component with Redux.
+Created by Harshita as part of an interview assignment requiring a Signup component with Redux Toolkit.
 
-⭐ If this project helped you or you're reviewing it, thank you!
+Thank you for reviewing the project! ⭐
