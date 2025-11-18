@@ -13,8 +13,6 @@ Form validation
 
 Clean, scalable folder structure
 
-Professional, interview-friendly code organization
-
 🚀 Features
 ✔ Signup Form
 
@@ -40,29 +38,38 @@ Proper Redux slices & store configuration
 
 / → Signup Page
 
-/home → Welcome Page (shows the signed-up user's name)
+/home → Welcome Page 
 
-✔ Professional File Structure
+✔ File Structure
+```
 src/
- ├── app/
- │    └── store.js
- ├── features/
- │    └── auth/
- │         └── authSlice.js
- ├── components/
- │    └── Signup/
- │         ├── Signup.jsx
- │         ├── Signup.css
- │         └── index.js
- ├── pages/
- │    └── Home/
- │         ├── Home.jsx
- │         └── Home.css
- ├── utils/
- ├── hooks/
- ├── App.jsx
- ├── main.jsx
- └── index.css
+│
+├── app/
+│   └── store.js
+│
+├── features/
+│   └── auth/
+│       └── authSlice.js
+│
+├── components/
+│   └── Signup/
+│       ├── Signup.jsx
+│       ├── Signup.css
+│       └── index.js
+│
+├── pages/
+│   └── Home/
+│       ├── Home.jsx
+│       └── Home.css
+│
+├── utils/
+│
+├── hooks/
+│
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
 🛠️ Tech Stack
 
@@ -78,13 +85,20 @@ JavaScript (ES6+)
 
 📦 Installation & Setup
 1️⃣ Clone the repository
-git clone <your-repo-url>
+
+```
+git clone https://github.com/Harshita2020/signup-redux-assignment.git
+```
 
 2️⃣ Install dependencies
+```
 npm install
+```
 
 3️⃣ Run the development server
+```
 npm run dev
+```
 
 🧪 How it Works
 ➤ When user fills the form & clicks Sign Up:
